@@ -33,9 +33,9 @@
             <div class="inscricao">
                 <a href="https://forms.gle/GR1xwnHEZqiF55tj6"> <img src="{{'img/inscricao.png'}}"></a>
             </div>
-            {{-- <div class="download">
-                <a class="btn btn-sm btn-primary" role="button" href="{{url('/download')}}">Download Ficha Inscrição PDF</a>
-            </div> --}}
+            <div class="download">
+                <a href="{{url('/download')}}"> <img src="{{'img/inscricaoPDF.png'}}"></a>
+            </div>
         </div>
     </body>
 </html>

@@ -34,3 +34,6 @@ Route::post('/lareirista', [ControladorLareirista::class, 'store']);
 Route::get('/lareirista/apagar/{id}', [ControladorLareirista::class, 'destroy']);
 Route::get('/lareirista/editar/{id}', [ControladorLareirista::class, 'edit']);
 Route::post('/lareirista/{id}', [ControladorLareirista::class, 'update']);
+
+
+Route::get('/download',[ControladorDownloadInscricao::class, 'download']);

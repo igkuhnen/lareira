@@ -17,7 +17,11 @@
                     {{ __('You are logged in!') }}
                 </div>
             </div>
+         <a href="{{ url('/lareirista') }}" class="btn btn-sm btn-primary" role="button">Cadastro</a>
+         <a href="{{ url('/uploadfichainscricao') }}" class="btn btn-sm btn-danger" role="button">Upload Ficha Inscrição</a>
+
         </div>
     </div>
+
 </div>
 @endsection
