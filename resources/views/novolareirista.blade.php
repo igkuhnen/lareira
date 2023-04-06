@@ -74,7 +74,9 @@
                     </form>
             </div>
     </div>
+    <a href="{{url('/home')}}" class="btn btn-sm btn-primary">Home</a>
+    <a href="{{url('/')}}" class="btn btn-sm btn-danger">Welcome</a>
 </div>
 
-<a href="/home" class="btn btn-sm btn-primary">Home</a>
-<a href="/" class="btn btn-sm btn-danger">Welcome</a>
+
+@endsection

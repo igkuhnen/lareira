@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ControladorLareirista;
 use App\Http\Controllers\ControladorDownloadInscricao;
+use App\Http\Controllers\ControladorDownloadReuniao;
 
 /*
 |--------------------------------------------------------------------------
@@ -37,3 +38,11 @@ Route::post('/lareirista/{id}', [ControladorLareirista::class, 'update']);
 
 
 Route::get('/download',[ControladorDownloadInscricao::class, 'download']);
+
+
+Route::get('/downloadreuniao',[ControladorDownloadReuniao::class, 'index']);
+
+Route::get('/downloadreuniaofevereiro',[ControladorDownloadReuniao::class, 'downloadreuniaofevereiro']);
+Route::get('/downloadreuniaomarco',[ControladorDownloadReuniao::class, 'downloadreuniaomarco']);
+Route::get('/downloadreuniaoabril',[ControladorDownloadReuniao::class, 'downloadreuniaoabril']);
+Route::get('/downloadreuniaomaio',[ControladorDownloadReuniao::class, 'downloadreuniaomaio']);
